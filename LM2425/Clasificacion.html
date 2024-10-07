@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clasificación Liga ACB</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: left;
+        }
+        .header a {
+            color: white;
+            text-decoration: none;
+            margin-right: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .tabla {
+            display: flex;
+            flex-direction: column;
+            margin: 20px 0;
+        }
+        .tabla-header, .tabla-row {
+            display: flex;
+            border: 1px solid #ddd;
+        }
+        .tabla-header {
+            background-color: #333;
+            color: white;
+        }
+        .tabla-header div, .tabla-row div {
+            padding: 12px;
+            flex: 1;
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        .team-logo {
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="#">&larr; Liga ACB</a>
+        <span>Temporada 2024-25</span>
+    </div>
+
+    <div class="container">
+        <h1>Clasificación</h1>
+        <div class="tabla">
+            <div class="tabla-header">
+                <div>Posición</div>
+                <div>Equipo</div>
+                <div class="center">Pts+</div>
+                <div class="center">Pts-</div>
+            </div>
+            <div class="tabla-row">
+                <div>1</div>
+                <div>
+                    <a href="https://www.cbgrancanaria.net/" target="_blank">
+                        <img class="team-logo" src="https://ssl.gstatic.com/onebox/media/sports/logos/fv0rYGx3QXIKbuujgZX8zw_48x48.png" alt="Gran Canaria">
+                        Gran Canaria
+                    </a>
+                </div>
+                <div class="center">171</div>
+                <div class="center">143</div>
+            </div>
+            <div class="tabla-row">
+                <div>2</div>
+                <div>
+                    <a href="https://www.valenciabasket.com/" target="_blank">
+                        <img class="team-logo" src="https://ssl.gstatic.com/onebox/media/sports/logos/RIWWOkEVEa676yzVIhSdsw_48x48.png" alt="Valencia">
+                        Valencia
+                    </a>
+                </div>
+                <div class="center">157</div>
+                <div class="center">137</div>
+            </div>
+            <div class="tabla-row">
+                <div>3</div>
+                <div>
+                    <a href="https://www.realmadrid.com/baloncesto" target="_blank">
+                        <img class="team-logo" src="https://ssl.gstatic.com/onebox/media/sports/logos/WWdQto0ldKBa6aPUyorbZA_48x48.png" alt="Real Madrid">
+                        Real Madrid
+                    </a>
+                </div>
+                <div class="center">186</div>
+                <div class="center">181</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
