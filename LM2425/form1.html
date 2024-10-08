@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario 1</title>
+</head>
+<body>
+    <form action="/submit-form" method="post">
+        <!-- Radiobuttons para idioma -->
+        <p>Seleccione su idioma:</p>
+        <input type="radio" id="idiomaingles" name="idioma" value="idiomaingles">
+        <label for="idiomaingles">Inglés</label><br>
+        <input type="radio" id="idiomaaleman" name="idioma" value="idiomaaleman">
+        <label for="idiomaaleman">Alemán</label><br>
+        <input type="radio" id="idiomafrances" name="idioma" value="idiomafrances">
+        <label for="idiomafrances">Francés</label><br><br>
+
+        <!-- Lista desplegable para conector -->
+        <label for="conector">Conector:</label>
+        <select id="conector" name="conector">
+            <option value="usb">USB</option>
+            <option value="paralelo">Paralelo</option>
+            <option value="ps2">PS2</option>
+        </select><br><br>
+
+        <!-- Cuadros de texto para nombre y apellidos -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br><br>
+
+        <!-- Lista desplegable múltiple para sexo -->
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" multiple>
+            <option value="hombre">Hombre</option>
+            <option value="mujer">Mujer</option>
+        </select><br><br>
+
+        <!-- Checkboxes para sexo -->
+        <p>Indique sus preferencias por favor:</p>
+        <input type="checkbox" id="sexomujer" name="sexo" value="sexomujer">
+        <label for="sexomujer">Mujer</label><br>
+        <input type="checkbox" id="sexohombre" name="sexo" value="sexohombre">
+        <label for="sexohombre">Hombre</label><br><br>
+
+        <!-- Control para indicar la fecha -->
+        <label for="fecha">Elija una fecha:</label>
+        <input type="text" id="fecha" name="fecha" placeholder="dd / mm / aaaa"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>

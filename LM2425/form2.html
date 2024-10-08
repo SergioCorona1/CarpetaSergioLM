@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario Completo</title>
+</head>
+<body>
+    <form action="/submit-form" method="post">
+        <!-- Control para indicar la hora -->
+        <label for="hora">Elija una hora:</label>
+        <input type="time" id="hora" name="hora"><br><br>
+
+        <!-- Textarea de 6 filas y 45 columnas -->
+        <label for="comentarios">Comentarios:</label><br>
+        <textarea id="comentarios" name="comentarios" rows="6" cols="45">Utilice este cuadro para escribir</textarea><br><br>
+
+        <!-- Radiobuttons para lenguaje -->
+        <p>Seleccione su lenguaje de programación:</p>
+        <input type="radio" id="lenguajejava" name="lenguaje" value="lenguajejava">
+        <label for="lenguajejava">Java</label><br>
+        <input type="radio" id="lenguajepython" name="lenguaje" value="lenguajepython">
+        <label for="lenguajepython">Python</label><br>
+        <input type="radio" id="lenguajehtml" name="lenguaje" value="lenguajehtml">
+        <label for="lenguajehtml">HTML</label><br>
+        <input type="radio" id="lenguajevisual_basic" name="lenguaje" value="lenguajevisual_basic">
+        <label for="lenguajevisual_basic">Visual Basic</label><br><br>
+
+        <!-- Control para elegir ficheros -->
+        <label for="fichero">Elija un fichero:</label>
+        <input type="file" id="fichero" name="fichero"><br><br>
+
+        <!-- Control para indicar la fecha -->
+        <label for="fecha">Elija una fecha:</label>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <!-- Control para elegir el color -->
+        <label for="color">Elija un color:</label>
+        <input type="color" id="color" name="color"><br><br>
+
+        <!-- Checkboxes para procesador -->
+        <p>Seleccione su procesador:</p>
+        <input type="checkbox" id="procesadorintel" name="procesador" value="procesadorintel">
+        <label for="procesadorintel">Intel</label><br>
+        <input type="checkbox" id="procesadoramd" name="procesador" value="procesadoramd">
+        <label for="procesadoramd">AMD</label><br><br>
+
+         <!-- Control para elegir ficheros -->
+         <label for="fichero">Elija un fichero:</label>
+         <input type="file" id="fichero" name="fichero"><br><br>
+ 
+         <!-- Control para indicar la fecha -->
+         <label for="fecha">Elija una fecha:</label>
+         <input type="date" id="fecha" name="fecha"><br><br>
+ 
+        <!-- Radiobuttons para procesador -->
+        <div style="display: flex; align-items: center;">
+            <input type="radio" id="procesadoramd" name="procesador" value="procesadoramd">
+            <label for="procesadoramd" style="margin-right: 20px;">AMD</label>
+            <input type="radio" id="procesadorintel_i5" name="procesador" value="procesadorintel_i5">
+            <label for="procesadorintel_i5" style="margin-right: 20px;">Intel i5</label>
+            <input type="radio" id="procesadorintel_i7" name="procesador" value="procesadorintel_i7">
+            <label for="procesadorintel_i7" style="margin-right: 20px;">Intel i7</label>
+        </div>
+
+        <!-- Textarea de 4 filas y 55 columnas -->
+        <label for="recuadro">Recuadro:</label><br>
+        <textarea id="recuadro" name="recuadro" rows="4" cols="55">Utilice este recuadro por favor</textarea><br><br>
+
+        <!-- Cuadros de texto -->
+        <label for="dni">DNI:</label>
+        <input type="text" id="dni" name="dni"><br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre"><br><br>
+
+        <label for="apellidos">Apellidos:</label>
+        <input type="text" id="apellidos" name="apellidos"><br><br>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono"><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
