@@ -1,0 +1,22 @@
+/* Selector de tipo para centrar el encabezado h2 */
+h2 {
+    text-align: center;
+}
+
+/* Estilo compartido por los párrafos con la clase "parrafo" */
+.parrafo {
+    font-size: 16px;
+    color: darkblue;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+/* Estilo único para el párrafo con el id "especial" */
+#especial {
+    font-size: 18px;
+    color: darkred;
+    font-weight: bold;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 5px;
+}

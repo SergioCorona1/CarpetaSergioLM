@@ -1,0 +1,5 @@
+/* Estilo para el párrafo con color verde y fondo amarillo claro */
+p.verde {
+    color: green;
+    background-color: lightyellow;
+}

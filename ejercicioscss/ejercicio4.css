@@ -1,0 +1,13 @@
+/* Estilos aplicados solo a los párrafos dentro del div */
+div p {
+    color: darkblue;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Estilo para el encabezado h3 con la clase "resaltado" */
+.resaltado {
+    background-color: yellow;
+    font-style: italic;
+    padding: 10px;
+}

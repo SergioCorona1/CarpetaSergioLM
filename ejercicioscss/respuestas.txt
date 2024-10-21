@@ -1,0 +1,54 @@
+○ ¿Qué diferencias encontraste entre los tres métodos de aplicar CSS?
+
+CSS En linea:
+Se aplica directamente en el atributo style de los elementos HTML.
+Ejemplo: <h1 style="color: blue;">Título</h1>
+
+
+CSS interno:
+Se aplica en el mismo documento HTML, dentro de una etiqueta <style> en la cabecera (<head>).
+Ejemplo:
+
+html
+Copiar código
+<head>
+  <style>
+    h1 {
+      color: blue;
+    }
+  </style>
+</head>
+
+CSS externo:
+Se guarda en un archivo .css separado que es vinculado al documento HTML mediante una etiqueta <link> en la cabecera (<head>).
+Ejemplo:
+
+html
+Copiar código
+<head>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+○ ¿Qué ventajas ves en usar CSS externo frente a los otros métodos?
+
+Facilita la reutilización del CSS en múltiples páginas, mejora la separación de preocupaciones, y permite un mantenimiento más eficiente.
+
+○ ¿Por qué usarías una clase en lugar de un id?
+
+ Con una clase, puedes reutilizar el estilo en diferentes lugares, lo que facilita el mantenimiento y la consistencia en tu diseño.
+
+Los selectores de clase son más flexibles en CSS y JavaScript. Puedes seleccionar múltiples elementos con una clase en CSS y aplicarlos en una regla, mientras que con un id, solo puedes aplicar la regla a un único elemento.
+
+○ Si cambias el estilo de h2 en el CSS, ¿cómo afecta eso a otros encabezados h2 en la página?
+
+Si cambias el estilo de la etiqueta <h2> en el CSS, todos los elementos <h2> en la página serán afectados, ya que los estilos aplicados a las etiquetas HTML afectan a todos los elementos de ese tipo.
+
+○ ¿Qué diferencias hay entre alinear texto usando CSS y hacerlo con HTML?
+
+Usar CSS para alinear texto sigue las buenas prácticas de desarrollo web, ya que separa la presentación del contenido, mientras que hacerlo con HTML es obsoleto y menos flexible.
+
+○ ¿Cómo cambiarías los márgenes o el padding para mejorar el diseño de los párrafos?
+
+Incrementar el margen inferior (margin-bottom) para que los párrafos no estén demasiado juntos.
+Aplicar padding para mejorar la legibilidad, separando el texto del borde de su contenedor.
+Ajustar el margen lateral (margin-left, margin-right) para controlar la alineación o centrado del párrafo en la página.

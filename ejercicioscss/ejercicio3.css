@@ -1,0 +1,20 @@
+/* Estilo para el título h3 alineado a la izquierda y con fondo diferente */
+h3 {
+    text-align: left;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+/* Estilo para el párrafo centrado con la clase "centrado" */
+.centrado {
+    text-align: center;
+    background-color: lightgreen;
+    padding: 10px;
+}
+
+/* Estilo para el párrafo alineado a la derecha con el id "derecha" */
+#derecha {
+    text-align: right;
+    background-color: lightcoral;
+    padding: 10px;
+}
