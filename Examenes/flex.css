@@ -1,0 +1,53 @@
+body {
+    background: url('flexbox.jfif') no-repeat center center fixed;
+    background-size: cover;
+    color: black;
+    font-size: 200%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input {
+    color: inherit;
+    font-size: inherit;
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    background-color: #E6E6E6;
+}
+
+input:focus, input:hover {
+    outline: 5px solid #3759e2;
+}
+
+button {
+    flex: 0 0 300px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #3759e2;
+    color: #fff;
+    box-shadow: 0 8px 8px rgba(226, 209, 12, 0.35);
+    cursor: pointer;
+    font-size: 100%;
+}
+
+button:focus, button:hover {
+    outline: 5px solid #3759e2;
+}
