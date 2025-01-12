@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conversor de Moneda</title>
+</head>
+<body>
+  <h1>Conversor de Moneda</h1>
+  <label for="amount">Cantidad:</label>
+  <input type="text" id="amount" placeholder="Introduce el monto">
+  <br><br>
+  <button onclick="convertToDollars()">Convertir a Dólares ($)</button>
+  <button onclick="convertToEuros()">Convertir a Euros (€)</button>
+  <p id="result"></p>
+
+  <script>
+    const exchangeRate = 0.94; // 1 $ = 0.94 €
+
+    function convertToDollars() {
+      const amount = parseFloat(document.getElementById("amount").value);
+      if (isNaN(amount) || amount <= 0) {
+        document.getElementById("result").textContent = "Por favor, introduce un valor válido.";
+        return;
+      }
+      const result = (amount / exchangeRate).toFixed(2);
+      document.getElementById("result").textContent = `${amount} € son ${result} $`;
+    }
+
+    function convertToEuros() {
+      const amount = parseFloat(document.getElementById("amount").value);
+      if (isNaN(amount) || amount <= 0) {
+        document.getElementById("result").textContent = "Por favor, introduce un valor válido.";
+        return;
+      }
+      const result = (amount * exchangeRate).toFixed(2);
+      document.getElementById("result").textContent = `${amount} $ son ${result} €`;
+    }
+  </script>
+</body>
+</html>
