@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio examen JVS</title>
+</head>
+<body>
+    <h1>Calcula indice IMC</h1>
+    <label for="Peso">Peso:</label>
+    <input type="text" id="Peso"
+    >
+    <label for="Estatura">Estatura:</label>
+    <input type="text" id="Estatura">
+
+    <button onclick="CalculoIMC()">Saber tu IMC</button>
+    
+    <p id="resultado"></p>
+
+    <script>
+        function CalculoIMC(){
+            let Peso = parseFloat(document.getElementById("Peso").value);
+            let Estatura = parseFloat(document.getElementById("Estatura").value);
+            if(isNaN(Peso) || isNaN(Estatura))
+        {
+            document.getElementById("resultado").innerHTML = "Debes introducir un valor numerico";
+        }
+
+        else{
+            let resultado = Peso / (Estatura * Estatura);
+            document.getElementById("resultado").innerHTML = "Tu IMC es" + resultado;
+        }
+    }
+            
+    </script>
+</body>
+</html>
