@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expediente academico</title>
+</head>
+<body>
+    <h1>Expediente academico</h1>
+    
+    <div id="contenedorNotas"></div>
+    <button onclick="anadirNota()">Añadir nota</button>
+    
+    <div>
+        <p>Aprobados: <span id="aprobados">0</span></p>
+        <p>Suspensos: <span id="suspensos">0</span></p>
+        <p>Media: <span id="media">0.00</span></p>
+    </div>
+
+    <script>
+        let notas = [''];
+
+        function mostrarNotas() {
+            const contenedor = document.getElementById('contenedorNotas');
+            contenedor.innerHTML = '';
+            
+            notas.forEach((nota, indice) => {
+                const entrada = document.createElement('input');
+                entrada.type = 'number';
+                entrada.value = nota;
+                entrada.placeholder = 'Nota';
+                entrada.onchange = (e) => actualizarNota(indice, e.target.value);
+                
+                const div = document.createElement('div');
+                div.appendChild(entrada);
+                contenedor.appendChild(div);
+            });
+            
+            calcularEstadisticas();
+        }
+
+        function anadirNota() {
+            notas.push('');
+            mostrarNotas();
+        }
+
+        function actualizarNota(indice, valor) {
+            notas[indice] = valor;
+            calcularEstadisticas();
+        }
+
+        function calcularEstadisticas() {
+            const notasValidas = notas
+                .map(n => parseFloat(n))
+                .filter(n => !isNaN(n));
+
+            const aprobados = notasValidas.filter(n => n >= 5).length;
+            const suspensos = notasValidas.filter(n => n < 5).length;
+            const media = notasValidas.length > 0 
+                ? notasValidas.reduce((a, b) => a + b, 0) / notasValidas.length 
+                : 0;
+
+            document.getElementById('aprobados').textContent = aprobados;
+            document.getElementById('suspensos').textContent = suspensos;
+            document.getElementById('media').textContent = media.toFixed(2);
+        }
+        mostrarNotas();
+    </script>
+</body>
+</html>
