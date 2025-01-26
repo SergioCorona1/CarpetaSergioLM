@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Números</title>
+</head>
+<body>
+    <div>
+        <h1>Gestión de Números</h1>
+        
+        <div>
+            <input type="text" id="entradaNumero" placeholder="Ingrese un número">
+            <button onclick="agregarNumero()">Añadir Número</button>
+        </div>
+
+        <div>
+            <button onclick="calcularSuma()">Calcular Suma</button>
+            <button onclick="encontrarMaximo()">Encontrar Máximo</button>
+            <button onclick="encontrarMinimo()">Encontrar Mínimo</button>
+            <button onclick="mostrarTodos()">Mostrar Todos</button>
+        </div>
+
+        <div>
+            <input type="text" id="entradaBusqueda" placeholder="Buscar número">
+            <button onclick="encontrarPosicion()">Buscar Posición</button>
+        </div>
+
+        <div id="resultados">
+            Los resultados se mostrarán aquí
+        </div>
+
+        <div id="listaNumeros">
+            Lista actual: []
+        </div>
+    </div>
+
+    <script src="numeros.js"></script>
+</body>
+</html>
