@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 11 - empty()</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <input type="text" id="entradaTexto" placeholder="Escribe algo...">
+    <button id="mostrarValor">Mostrar valor del input</button>
+    <button id="vaciarContenido">Vaciar contenido</button>
+
+
+    <script>
+        $(document).ready(function() {
+            $("#vaciarContenido").click(function() {
+                $("#entradaTexto").empty();
+            });
+        });
+
+        $(document).ready(function() {
+            $("#mostrarValor").click(function() {
+                alert($("#entradaTexto").val());    
+            });
+        });
+    </script>
+
+</body>
+</html>
+    

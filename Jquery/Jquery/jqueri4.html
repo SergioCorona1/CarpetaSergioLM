@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jquery 4</title>
+    <script src="jquery-3.7.1.js.js"></script>
+</head>
+<body>
+    <h1 id="encabezado">Introduccion a jQuery</h1>
+    <p class="impar">Jquery</p>
+    <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam culpa at corrupti voluptatibus architecto dolorem dignissimos ea vitae minima, alias quaerat porro obcaecati, iusto, deserunt magni facere quibusdam hic vero.</p>
+    <p class="impar">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam culpa at corrupti voluptatibus architecto dolorem dignissimos ea vitae minima, alias quaerat porro obcaecati, iusto, deserunt magni facere quibusdam hic vero.</p>
+    <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam culpa at corrupti voluptatibus architecto dolorem dignissimos ea vitae minima, alias quaerat porro obcaecati, iusto, deserunt magni facere quibusdam hic vero.</p>
+
+    <button id="boton1">Clic aqui</button>
+    <button id="boton2">Clic aqui</button>
+    
+
+    <script>
+        $(document).ready(function(){
+
+            $("#boton1").click(function(){
+                $("#encabezado").css("font-size", "50%")
+                $("#encabezado").css("color", "red")
+                $(".par").css("font-size", "50%")
+                $(".par").css("color", "red")
+            })
+
+            $("#boton2").click(function(){
+                $("#encabezado").css("font-size", "200%")
+                $("#encabezado").css("color", "green")
+                $(".par").css("font-size", "200%")
+                $(".par").css("color", "green")
+
+            })
+
+        
+
+    });
+        
+    </script>
+</body>
+</html>

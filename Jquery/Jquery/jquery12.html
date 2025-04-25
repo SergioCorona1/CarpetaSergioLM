@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 12 - Mostrar/Ocultar</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="cajaOcultar">Este texto puede ocultarse o mostrarse.</div>
+    <button id="botonOcultarMostrar">Mostrar/Ocultar texto</button>
+
+    <script>
+        $(document).ready(function() {
+            $("#botonOcultarMostrar").click(function() {
+                $("#cajaOcultar").toggleClass("oculto");
+            });
+        });
+    </script>
+
+</body>
+</html>

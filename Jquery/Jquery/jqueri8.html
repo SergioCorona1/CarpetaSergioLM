@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 8 - attr() y html()</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+    <h1 id="encabezado">Este es el Encabezado</h1>
+    <img id="imagen" src="https://via.placeholder.com/150" alt="Imagen de ejemplo">
+    <p id="parrafo">Este es un párrafo de ejemplo.</p>
+
+    <button id="obtenerImagen">Obtener src de la imagen</button>
+    <button id="obtenerEncabezado">Obtener html del encabezado</button>
+    <button id="obtenerParrafo">Obtener html del párrafo</button>
+
+    <script>
+        $(document).ready(function() {
+            $("#obtenerImagen").click(function() {
+                alert("SRC de la imagen (img): " + $("#imagen").attr("src"));
+            });
+
+            $("#obtenerEncabezado").click(function() {
+                alert("Contenido del encabezado (h1): " + $("#encabezado").html());
+            });
+
+            $("#obtenerParrafo").click(function() {
+                alert("Contenido del párrafo (p): " + $("#parrafo").html());
+            });
+        });
+    </script>
+
+</body>
+</html>
